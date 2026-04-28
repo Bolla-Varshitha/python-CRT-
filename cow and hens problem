@@ -1,0 +1,14 @@
+legs = int(input("Enter total legs: "))
+heads = int(input("Enter total heads: "))
+
+if legs % 2 != 0:
+    print("no solution")
+else:
+    cows = (legs - 2 * heads) // 2
+    hens = heads - cows
+
+    if cows < 0 or hens < 0:
+        print("no solution")
+    else:
+        print("Cows:", cows)
+        print("Hens:", hens)
