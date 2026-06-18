@@ -1,0 +1,11 @@
+a = [5,5,7,2,3,0,4,8,9]
+k = 6
+
+d = {}
+
+for i in range(len(a)):
+    if k - a[i] in d:
+        print("Indices:", d[k-a[i]], i)
+        print("Values:", a[d[k-a[i]]], a[i])
+        break
+    d[a[i]] = i
