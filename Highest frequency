@@ -1,0 +1,9 @@
+s = "abcdefffghedidjke"
+d = {}
+for ch in s:
+    d[ch] = d.get(ch, 0) + 1
+m = max(d.values())
+for ch in s[::-1]:
+    if d[ch] == m:
+        print(ch)
+        break
